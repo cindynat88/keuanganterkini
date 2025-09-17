@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TangkasQQ Poker - Bermain poker dengan pengalaman seru, aman, dan menguntungkan. Temukan tips, kelebihan, dan trik terbaik dalam permainan poker online.">
+<meta name="keywords" content="TangkasQQ Poker, poker online, bermain poker, tips poker, strategi poker , BandarQQ , QQ online , Poker uang asli">
+<meta name="author" content="TangkasQQ Poker">
+<title>TangkasQQ Poker - Nikmati Sensasi Bermain Poker Online</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+* {margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif;}
+body {background: linear-gradient(to bottom right, #fef9f3, #ffffff); color:#333; line-height:1.7; overflow-x:hidden; position:relative;}
+
+/* Header */
+header {background: linear-gradient(90deg, #000000, #1a1a1a); color:white; padding:20px; display:flex; justify-content: space-between; align-items: center; flex-wrap:wrap; position: relative; box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+.logo {font-size:55px; font-family: 'Fredoka One', cursive; font-weight:bold; background: linear-gradient(270deg, black, red, yellow, black); background-size: 600% 600%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradientMove 5s ease infinite;}
+@keyframes gradientMove {0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;}}
+nav {margin-top:10px;}
+nav a {color:white; margin:0 12px; text-decoration:none; font-weight:bold; position:relative; transition: all 0.3s ease;}
+nav a::after {content:''; position:absolute; left:0; bottom:-3px; width:0; height:2px; background:#ffcc00; transition:width 0.3s;}
+nav a:hover::after {width:100%;}
+nav a:hover {color:#ffcc00; text-shadow: 0 0 12px #ffcc00;}
+
+/* Roulette Interaktif */
+.roulette {width:100px; height:100px; border:8px solid #ff0000; border-radius:50%; position:fixed; top:150px; right:20px; background: conic-gradient(#ff0000 0deg 60deg, #00ff00 60deg 120deg, #0000ff 120deg 180deg, #ffff00 180deg 240deg, #ff00ff 240deg 300deg, #00ffff 300deg 360deg); display:flex; align-items:center; justify-content:center; font-weight:bold; color:white; cursor:pointer; animation: rotateRoulette 4s linear infinite; text-align:center; font-size:14px; z-index:100; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow:0 0 15px rgba(0,0,0,0.4);}
+.roulette:hover {transform: scale(1.15); box-shadow: 0 0 25px #ffcc00;}
+@keyframes rotateRoulette {from {transform:rotate(0deg);} to {transform:rotate(360deg);}}
+
+/* Main Content */
+main {padding:40px 20px; max-width:1200px; margin:auto; position:relative; z-index:1;}
+article {margin-bottom:60px; opacity:0; transform: translateY(50px); transition: all 1s ease;}
+article.visible {opacity:1; transform: translateY(0);}
+article h2 {color:#4b2e2e; margin-bottom:20px; opacity:0; transform: translateX(-50px); transition: all 1s ease;}
+article.visible h2 {opacity:1; transform: translateX(0);}
+article p {line-height:1.8; margin-bottom:20px;}
+article img {max-width:100%; margin:20px 0; border-radius:12px; transition: transform 0.5s ease, box-shadow 0.5s ease;}
+article.visible img {transform: scale(1.05);}
+article img:hover {transform: scale(1.1) translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.25);}
+
+/* Testimoni smooth scroll */
+.testimoni-container {position: relative; overflow: hidden; height: 160px; background: linear-gradient(120deg, #fff8e6, #ffe6f0); border-radius: 20px; padding: 8px 12px; margin-bottom: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.25);}
+.testimoni-list {display: flex; flex-direction: column; gap: 10px; animation: scrollSmooth 15s linear infinite;}
+.testimoni-item {text-align: center; padding: 6px 8px; font-style: italic; font-size: 16px; background: rgba(255,255,255,0.85); border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.2);}
+@keyframes scrollSmooth {0% { transform: translateY(0); } 100% { transform: translateY(-50%); }}
+
+/* Footer */
+footer {background: linear-gradient(90deg, #1a1a1a, #000000); color:white; text-align:center; padding:20px; box-shadow:0 -5px 15px rgba(0,0,0,0.3);}
+footer a {color:#ffcc00; text-decoration:none; margin:0 10px; transition: color 0.3s;}
+footer a:hover {color:#ffff00;}
+
+/* Responsive */
+@media(max-width:768px){.logo {font-size:40px; text-align:center; width:100%;} nav {width:100%; text-align:center; margin-top:10px;} nav a {margin:0 10px;} .roulette {width:70px; height:70px; font-size:12px; top:auto; bottom:20px; right:20px;} main {padding:20px 10px;} .testimoni-container {height:120px;}}
+@media(max-width:480px){.logo {font-size:30px;} .roulette {width:60px; height:60px; font-size:11px;} .testimoni-container {height:100px;}}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">TangkasQQ</div>
+    <nav>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#tips">Tips Bermain</a>
+        <a href="#link">Link Poker</a>
+    </nav>
+</header>
+
+<!-- Roulette Interaktif -->
+<div class="roulette" id="rouletteWheel">Klik di sini</div>
+
+<main>
+<!-- Testimoni smooth scroll -->
+<div class="testimoni-container">
+    <div class="testimoni-list" id="testimoniList">
+        <div class="testimoni-item">"Platform TangkasQQ sangat seru dan mudah digunakan!" - Rina</div>
+        <div class="testimoni-item">"Saya mendapatkan kemenangan besar setelah mempelajari strategi dari TangkasQQ." - Adi</div>
+        <div class="testimoni-item">"Support cepat dan fitur lengkap membuat pengalaman bermain saya menyenangkan." - Lila</div>
+        <div class="testimoni-item">"Turnamen dan bonusnya sangat menarik!" - Budi</div>
+        <div class="testimoni-item">"Interface mudah dipahami, sangat direkomendasikan!" - Sari</div>
+        <div class="testimoni-item">"Pelayanan customer service sangat responsif." - Joko</div>
+        <div class="testimoni-item">"Bonus depositnya benar-benar membantu pemula." - Maya</div>
+        <div class="testimoni-item">"Grafik dan animasinya membuat bermain semakin seru." - Tono</div>
+        <div class="testimoni-item">"Mudah diakses dari HP maupun PC." - Reni</div>
+        <div class="testimoni-item">"Keamanan data sangat terjamin." - Fajar</div>
+        <div class="testimoni-item">"Turnamen mingguan selalu menantang." - Dian</div>
+        <div class="testimoni-item">"Belajar strategi poker menjadi lebih mudah." - Andi</div>
+        <div class="testimoni-item">"Platform terpercaya dan fair play." - Sinta</div>
+        <div class="testimoni-item">"Fitur chat membuat interaksi lebih seru." - Rizky</div>
+        <div class="testimoni-item">"Dukungan bonus referral sangat menguntungkan." - Lala</div>
+
+        <!-- Duplikasi untuk loop smooth -->
+        <div class="testimoni-item">"Platform TangkasQQ sangat seru dan mudah digunakan!" - Rina</div>
+        <div class="testimoni-item">"Saya mendapatkan kemenangan besar setelah mempelajari strategi dari TangkasQQ." - Adi</div>
+        <div class="testimoni-item">"Support cepat dan fitur lengkap membuat pengalaman bermain saya menyenangkan." - Lila</div>
+        <div class="testimoni-item">"Turnamen dan bonusnya sangat menarik!" - Budi</div>
+        <div class="testimoni-item">"Interface mudah dipahami, sangat direkomendasikan!" - Sari</div>
+    </div>
+</div>
+
+<!-- Artikel tetap lengkap -->
+<article>
+    <h2>Bermain Poker di TangkasQQ: Pengalaman Seru dan Menguntungkan</h2>
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1200&q=80" alt="Bermain Poker TangkasQQ">
+    <p>
+    TangkasQQ Poker menghadirkan pengalaman bermain poker online yang tidak hanya menyenangkan tetapi juga menguntungkan. Saat Anda masuk ke dunia Poker, Anda akan menemukan berbagai fitur yang dirancang untuk meningkatkan keseruan bermain poker. Mulai dari antarmuka yang intuitif, tampilan grafik yang menarik, hingga turnamen online dengan hadiah besar, semuanya memberikan pengalaman gaming yang menyenangkan dan memikat. Tidak hanya itu, TangkasQQ Poker juga menjamin keamanan data pemain, sehingga Anda dapat fokus pada strategi permainan tanpa khawatir soal privasi. Banyak pemain profesional menyarankan TangkasQQ sebagai platform yang ideal untuk belajar strategi poker sambil tetap bersenang-senang. Kelebihan lainnya adalah adanya opsi interaksi dengan pemain lain, membuat setiap sesi poker terasa hidup dan penuh tantangan. Dengan berbagai keuntungan ini, TangkasQQ Poker telah menjadi pilihan utama bagi para pecinta poker online.
+    </p>
+</article>
+
+<article id="keunggulan">
+    <h2>Kelebihan Bermain Poker Online di TangkasQQ</h2>
+    <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80" alt="Kelebihan TangkasQQ Poker">
+    <p>
+    Salah satu keunggulan utama TangkasQQ Poker adalah fleksibilitas dan kenyamanan dalam bermain poker dari mana saja. Anda tidak perlu lagi datang ke kasino fisik, cukup dengan perangkat mobile atau PC, Anda sudah bisa menikmati berbagai jenis permainan poker favorit. Selain itu, TangkasQQ menyediakan sistem bonus dan reward yang menarik bagi pemain setia, sehingga semakin banyak bermain, semakin banyak keuntungan yang bisa didapatkan. Platform ini juga dilengkapi dengan panduan dan tips strategi yang membantu pemain pemula memahami trik bermain poker dengan lebih cepat. Aspek keamanan menjadi prioritas utama, menggunakan teknologi enkripsi terbaru untuk melindungi transaksi dan data pribadi pemain. Tidak heran jika TangkasQQ Poker memiliki reputasi yang kuat di komunitas poker online. Untuk informasi lebih lanjut dan mencoba permainan, Anda bisa kunjungi <a href="https://angkamatajitu.com/tangkasqq/" target="_blank">Situs Poker di TangkasQQ</a> atau beberapa situs resmi terpercaya lainnya seperti <a href="https://www.pokerstars.com" target="_blank">PokerStars</a>, <a href="https://www.partypoker.com" target="_blank">PartyPoker</a>, dan <a href="https://www.888poker.com" target="_blank">888Poker</a>.
+    </p>
+</article>
+
+<article id="tips">
+    <h2>Tips dan Strategi Bermain Poker Online</h2>
+    <p>
+    Bermain poker online di TangkasQQ tidak hanya soal keberuntungan, tetapi juga membutuhkan strategi yang tepat. Pemain yang ingin meraih kemenangan besar sebaiknya memahami pola permainan, membaca peluang kartu, serta mempelajari teknik bluffing yang efektif. TangkasQQ menyediakan berbagai tutorial dan sesi latihan yang membantu pemain meningkatkan kemampuan tanpa risiko kehilangan uang asli secara langsung. Selain itu, mengatur manajemen modal juga sangat penting agar permainan tetap konsisten dan menyenangkan. Dengan memanfaatkan fitur turnamen dan bonus yang disediakan, pemain dapat memaksimalkan pengalaman bermain poker mereka. Banyak pemain berpengalaman merekomendasikan untuk selalu memulai dengan taruhan kecil untuk mempelajari lawan dan pola permainan sebelum bermain dengan taruhan tinggi. Strategi yang tepat, kesabaran, dan pemahaman mendalam tentang poker akan membuat pengalaman TangkasQQ Poker menjadi lebih seru dan menguntungkan bagi semua pemain, baik pemula maupun profesional.
+    </p>
+</article>
+
+<article id="link">
+    <h2>Link Resmi dan Rekomendasi Situs Poker</h2>
+    <p>
+    Untuk pengalaman bermain poker yang lebih lengkap dan aman, Anda bisa mengakses beberapa link resmi terpercaya. Salah satunya adalah <a href="https://angkamatajitu.com/tangkasqq/" target="_blank">TangkasQQ Poker</a> yang menyediakan informasi seputar poker online, strategi, dan tips kemenangan. Selain itu, situs resmi seperti <a href="https://www.pokerstars.com" target="_blank">PokerStars</a>, <a href="https://www.partypoker.com" target="_blank">PartyPoker</a>, dan <a href="https://www.888poker.com" target="_blank">888Poker</a> dapat dijadikan referensi terpercaya.
+    </p>
+</article>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 TangkasQQ Poker. Semua hak dilindungi. | <a href="https://angkamatajitu.com/tangkasqq/" target="_blank">Kunjungi TangkasQQ</a></p>
+</footer>
+
+<script>
+// Roulette interaktif
+const roulette = document.getElementById('rouletteWheel');
+const targetLink = "https://angkamatajitu.com/tangkasqq/"; 
+roulette.addEventListener('click', () => {
+    roulette.style.animation = 'rotateRouletteFast 1s linear';
+    setTimeout(() => {
+        window.open(targetLink, '_blank'); 
+        roulette.style.animation = 'rotateRoulette 4s linear infinite';
+    }, 1000);
+});
+
+// Keyframe cepat roulette
+const style = document.createElement('style');
+style.innerHTML = `
+@keyframes rotateRouletteFast {from {transform:rotate(0deg);} to {transform:rotate(720deg);}}
+@keyframes rotateRoulette {from {transform:rotate(0deg);} to {transform:rotate(360deg);} }
+#rouletteWheel {animation: rotateRoulette 4s linear infinite;}
+`;
+document.head.appendChild(style);
+
+// Animasi scroll artikel saat muncul
+const articles = document.querySelectorAll('article');
+function revealArticles() {
+    const triggerBottom = window.innerHeight / 1.1;
+    articles.forEach(article => {
+        const articleTop = article.getBoundingClientRect().top;
+        if(articleTop < triggerBottom) {article.classList.add('visible');}
+    });
+}
+window.addEventListener('scroll', revealArticles);
+window.addEventListener('load', revealArticles);
+</script>
+
+</body>
+</html>
